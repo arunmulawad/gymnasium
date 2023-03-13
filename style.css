@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #222;
+    height: 11vh; 
+    z-index: 100000;
+}
+    
+.nav h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#item li{
+    list-style: none;
+    padding-right: 40px;
+    font-weight: 250;
+    font-size: 17px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+#item li:hover{
+    color: #ff5733;
+}
+#item .icon i{
+    color: #fff;
+    padding-right: 10px;
+}
+#item .icon i:hover{
+    color: #ff5733;
+}
+.back-img{
+    background-image: url("img/1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.back-img .overlay{
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.mid p{
+    color: #7f8c8d;
+    font-size: 2rem;
+    font-weight: 250;
+}
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.mid .bottom-btn{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.mid .bottom-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0.9rem 1.6rem;
+}
+.simple-btn{
+    color: #fff;
+
+}
+.simple-btn:hover{
+    color: #ff5733;
+
+}
+.border-btn{
+    color: #ff5733;
+    border: 0.5px solid ;
+    border-radius: 3px;
+}
+.border-btn:hover{
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+    color: #fff;
+}
+.details .one{
+    width: 45%;
+     
+}
+.details .one h3{
+    font-size: 2.5rem;
+    font-weight: 350;
+
+    padding-bottom: 1.1rem;
+}
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 350;
+    padding-bottom: 1.3rem;
+}
+.details .one p{
+    color: #918585;
+    font-size: 1rem;
+    font-weight: 350;
+    padding-bottom: 1.3rem;
+}
+.details .one a{
+    text-decoration: none;
+    color: rgb(122, 110, 110);
+    font-size: 1.5rem;
+    font-weight: 350;
+    border:1px solid #918585;
+    padding: 0 20px;
+}
+.details .one a:hover{
+    color: #171819;
+    background-color: #918585 ;
+    font-weight: 450;
+
+}
+
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 5rem;
+     
+}
+.details .two h3{
+    font-size: 2rem;
+    font-weight: 300;
+
+    padding-bottom: 0.6rem;
+}
+.details .two h5{
+    font-size: 1.3rem;
+    font-weight: 350; 
+}
+.details .two p{
+    font-size: 1rem;
+    font-weight: 350; 
+    color: #918585;
+}
+
+.trainer{
+    background: #f9f9f9;
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.trainer .about{
+    width: 39%;
+}
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.3rem;
+    font-weight: 350;
+    padding-bottom: 1.1rem;
+}
+.trainer .about p{
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 350;
+}
+.trainer .people{
+    width:55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.trainer .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:2.3px 2px 2.2px rgba(0, 0, 0, 0.048),5.5px 4.9px 5.3px rgba(0, 0, 0, 0.069),
+  10.3px 9.3px 10px rgba(0, 0, 0, 0.085),18.3px 16.5px 17.9px rgba(0, 0, 0, 0.101),
+  34.3px 30.9px 33.4px rgba(0, 0, 0, 0.122),82px 74px 80px rgba(0, 0, 0, 0.17);
+
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.trainer .people .team1 .name, .trainer .people .team1 .prof{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;      
+}
+.trainer .people .team1 .name h4{
+    color: #212529;
+    font-size: 1.6rem;
+    font-weight: 390;
+    padding-left: 1rem;
+}
+.trainer .people .team1 .prof p{
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 300;
+    padding:0 1rem 1rem 1rem;
+}
+.trainer .people .team1 .name i,.trainer .people .team1 .prof i{
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #212529;
+    padding:0 1rem 1rem 0 ;
+
+}
+.trainer .people .team1 .name i:hover,
+.trainer .people .team1 .prof i:hover{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+.trainer .people .team2{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:2.3px 2px 2.2px rgba(0, 0, 0, 0.048),5.5px 4.9px 5.3px rgba(0, 0, 0, 0.069),
+  10.3px 9.3px 10px rgba(0, 0, 0, 0.085),18.3px 16.5px 17.9px rgba(0, 0, 0, 0.101),
+  34.3px 30.9px 33.4px rgba(0, 0, 0, 0.122),82px 74px 80px rgba(0, 0, 0, 0.17);
+
+}
+.trainer .people .team2 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.trainer .people .team2 .name, .trainer .people .team2 .prof{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;      
+}
+.trainer .people .team2 .name h4{
+    color: #212529;
+    font-size: 1.6rem;
+    font-weight: 390;
+    padding-left: 1rem;
+}
+.trainer .people .team2 .prof p{
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 300;
+    padding:0 1rem 1rem 1rem;
+    
+}
+.trainer .people .team2 .name i,.trainer .people .team2 .prof i{
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #212529;
+    padding:0 1rem 1rem 0 ;
+}
+.trainer .people .team2 .name i:hover,
+.trainer .people .team2 .prof i:hover{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+
+.classes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 7rem 0 8rem;
+}
+.classes .class-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.classes p{
+    font-size: 1.3rem;
+    color: #7f898a;
+    font-weight: 300;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.classes h2{
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 350;
+    padding-bottom: 50px;
+}
+
+.classes .class-items .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:2.3px 2px 2.2px rgba(0, 0, 0, 0.048),5.5px 4.9px 5.3px rgba(0, 0, 0, 0.069),
+  10.3px 9.3px 10px rgba(0, 0, 0, 0.085),18.3px 16.5px 17.9px rgba(0, 0, 0, 0.101),
+  34.3px 30.9px 33.4px rgba(0, 0, 0, 0.122),82px 74px 80px rgba(0, 0, 0, 0.17);
+
+}
+.classes .class-items .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.classes .class-items .team1 .name, .trainer .people .team1 .prof{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+
+     
+}
+.classes .class-items .team1 .name h4{
+    color: #212529;
+    font-size: 1.4rem;
+    font-weight: 390;
+    padding-left: 0.5rem;
+   
+}
+.classes .class-items .team1 .name p{
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 390;   
+    padding-left: 0.5rem;
+
+}
+.classes .class-items .team1 .price{
+    padding-left: 0.5rem;
+}
+.classes .class-items .team1 .price h5{
+    color: #212529;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 2px solid #ff5733;
+    border-radius: 20%;
+    padding: 0.4rem;   
+}
+.classes .class-items .team1 .prof p{
+    color: #666262;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align:left;
+    padding-left: 0.5rem; 
+}
+
+.contact{
+    padding: 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+.contact .form{
+    width: 45%;
+}
+.contact .form h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 250;
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+.contact .form .submit input:focus , .contact .form .submit textarea:focus{
+    border: 1.2px solid #111;  
+}
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;   
+}
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;   
+    font-size: 1.1rem;
+    height: 80%;
+}
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+.contact .map{
+    width: 45%;
+}
+.contact .map h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 250;
+    
+}
+.contact .map p{
+    font-size: 1.1rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 350;
+}
+.contact .map p  i{
+    color: #ff5733;
+    padding-right: 10px;
+}
+.contact .map iframe{
+    width: 100%;
+}
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 350;
+}
+.footer p i{
+    color: #de755d;
+    padding-right: 10px;
+}
+
