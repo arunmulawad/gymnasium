@@ -3,4 +3,4 @@
 DOWNLOAD THE FILE .
 
 Extract zip Files to new folder
-THEN Open the the index.html 
+THEN open the index.html file 
